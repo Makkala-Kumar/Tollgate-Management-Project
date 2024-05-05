@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Company Name</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript">
+function validation()
+{
+var a=document.f.name.value;
+
+if(a=="")
+{
+alert("Enter UserName!");
+document.f.name.focus();
+return false;
+}
+
+var b=document.f.pass.value;
+
+if(b=="")
+{
+alert("Enter password!");
+document.f.pass.focus();
+return false;
+}
+}
+</script>
+</head>
+<body>
+<div id="container"> 
+  <h1>TollGate Management</h1>
+  <div id="intro"> 
+    <div id="pageHeader"> 
+      <h1><span></span></h1>
+    </div>
+    <div id="lmenu"> 
+      <ul>
+        <li><a href="admin0.jsp">Admin Login</a>&nbsp; </li>
+        <li><a href="tolling0.jsp">Tolling</a>&nbsp;</li>
+        <li><a href="contact.jsp">Contacts</a>&nbsp;</li>
+      </ul>
+    </div>
+  </div>
+  <div id="quickintro"> 
+    <div id="quickSummary"> 
+      <h1><font color="#FF0000">User login </font></h1>
+      <form name="f" action="user1.jsp" onSubmit="return validation()">
+        <table>
+          <tr> 
+            <td><font color="#0000CC">Username:</font></td>
+            <td bgcolor="#FF33FF"><input type="text" name="name"></td>
+          </tr>
+          <tr> 
+            <td><font color="#0000CC">Password:</font></td>
+            <td bgcolor="#99FFFF"><input type="password" name="pass"></td>
+          </tr>
+          <tr> 
+            <td></td>
+            <td><input type="submit" name="su" value="Login"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <input type="reset" name="clear" value="Clear"></td>
+          </tr>
+        </table>
+      </form>
+      <div style="position:absolute; left:500px; top:315px"> <img src="images/user.png" height="25" width="25">	
+      </div>
+      <div style="position:absolute; left:500px; top:340px"> <img src="images/password.png" height="25" width="25">	
+      </div>
+      <a href="newreg.jsp">Prove That You're a New member! <font color="#FF0000">Signup</font></a> 
+    </div>
+  </div>
+  <div id="development"> 
+    <h3><span></span></h3>
+    <p align="justify" class="p1">Tolls are a form of user tax that usually pays 
+      for the cost of road construction and maintenance without raising taxes 
+      on non-users. Historically, and sometimes today, tolls are collected as 
+      a type of tax for the use of the localgovernment or lord. Investor's bonds 
+      necessary to pay for the construction and maintenance of the roads are issued 
+      and sold with the expectation that the bonds will be paid back over time 
+      by user tolls. After the bonds are paid off the road typically reverts to 
+      the government agency that owns the land it was built on and had authorized 
+      the construction. access to toll roads are restricted to prevent non-payers 
+      from using the road. Toll roads may be built to allow some users to travel 
+      faster from one location to another relieving traffic congestion and speeding 
+      up traffic for those who can afford it. These type systems may be one restricted 
+      toll lane or more on an otherwise "free" road all roads have to be paid 
+      for somehow and are never "free". Normally, road construction costs are 
+      paid for by the taxes on gasoline, diesel, or other fuel. Users of toll 
+      roads still pay these taxes and the tolls for using this particular road 
+      or lane.</p>
+  </div>
+  <div id="footer"> </div>
+</div>
+</div>
+</body>
+</html>
