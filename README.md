@@ -13,7 +13,7 @@ This project is a web-based tollgate management system developed using Java back
 
 ## Technologies Used
 
-- **Backend Frameworks**: Utilizes Java-based frameworks like Spring Boot and Hibernate.
+- **Backend Frameworks**: Utilizes Java-based frameworks.
 - **Frontend Frameworks**: Implements frontend components using HTML5, CSS3, and Bootstrap.
 - **Database Management**: Integrates with MySQL for data storage.
 - **Security Measures**: Implements HTTPS encryption and password hashing.
